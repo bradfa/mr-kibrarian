@@ -1,0 +1,77 @@
+# Repositories used for KiCad library development, coordinated by myrepos tool
+
+[DEFAULT]
+git_tag = git tag "$@"
+git_branch = git branch "$@"
+git_reset = git reset "$@"
+git_merge = git merge "$@"
+git_remote = git remote "$@"
+
+# For 'mr status', don't assume the short format for 'git status' is desired
+git_status = git status "$@"
+
+# for 'mr fetch', don't assume '--all' is implied
+git_fetch = git fetch "$@"
+
+# For 'mr commit', don't assume 'git commit -a' and don't 'git push'
+git_commit = git commit "$@"
+
+# Allow `git checkout` operations on git repos
+git_gitcheckout = git checkout "$@"
+
+[kicad-symbols]
+checkout =
+	git clone 'https://github.com/kibrarian-group/kicad-symbols.git' 'kicad-symbols' -o 'github-kibrarian'
+	cd kicad-symbols
+	git remote set-url --push github-kibrarian git@github.com:kibrarian-group/kicad-symbols.git
+	git remote add upstream https://github.com/KiCad/kicad-symbols.git
+
+[kicad-footprints]
+checkout =
+	git clone 'https://github.com/kibrarian-group/kicad-footprints.git' 'kicad-footprints' -o 'github-kibrarian'
+	cd kicad-footprints
+	git remote set-url --push github-kibrarian git@github.com:kibrarian-group/kicad-footprints.git
+	git remote add upstream https://github.com/KiCad/kicad-footprints.git
+
+[kicad-packages3D]
+checkout =
+	git clone 'https://github.com/kibrarian-group/kicad-packages3D.git' 'kicad-packages3D' -o 'github-kibrarian'
+	cd kicad-packages3D
+	git remote set-url --push github-kibrarian git@github.com:kibrarian-group/kicad-packages3D.git
+	git remote add upstream https://github.com/KiCad/kicad-packages3D.git
+
+[kicad-packages3D-source]
+checkout =
+	git clone 'https://github.com/kibrarian-group/kicad-packages3D-source.git' 'kicad-packages3D-source' -o 'github-kibrarian'
+	cd kicad-packages3D-source
+	git remote set-url --push github-kibrarian git@github.com:kibrarian-group/kicad-packages3D-source.git
+	git remote add upstream https://github.com/KiCad/kicad-packages3D-source.git
+
+[kicad-doc]
+checkout =
+	git clone 'https://github.com/kibrarian-group/kicad-doc.git' 'kicad-doc' -o 'github-kibrarian'
+	cd kicad-doc
+	git remote set-url --push github-kibrarian git@github.com:kibrarian-group/kicad-doc.git
+	git remote add upstream https://github.com/KiCad/kicad-doc.git
+
+[kicad-templates]
+checkout =
+	git clone 'https://github.com/kibrarian-group/kicad-templates.git' 'kicad-templates' -o 'github-kibrarian'
+	cd kicad-templates
+	git remote set-url --push github-kibrarian git@github.com:kibrarian-group/kicad-templates.git
+	git remote add upstream https://github.com/KiCad/kicad-templates.git
+
+[kicad-library-utils]
+checkout =
+	git clone 'https://github.com/kibrarian-group/kicad-library-utils.git' 'kicad-library-utils' -o 'github-kibrarian'
+	cd kicad-library-utils
+	git remote set-url --push github-kibrarian git@github.com:kibrarian-group/kicad-library-utils.git
+	git remote add upstream https://github.com/KiCad/kicad-library-utils.git
+
+[kicad-footprint-generator]
+checkout =
+	git clone 'https://github.com/kibrarian-group/kicad-footprint-generator.git' 'kicad-footprint-generator' -o 'github-kibrarian'
+	cd kicad-footprint-generator
+	git remote set-url --push github-kibrarian git@github.com:kibrarian-group/kicad-footprint-generator.git
+	git remote add upstream https://github.com/pointhi/kicad-footprint-generator.git
+
