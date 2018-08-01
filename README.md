@@ -18,3 +18,16 @@ automatically and there will be 2 remotes setup:
 
 1. The "upstream" remote
 2. The Kibrarian Group remote
+
+## Changes needed in KiCad
+
+The way that the footprints work today is that they reference their 3D model's
+path via the KISYS3DMOD variable which is a "global" variable (technically it's
+stored in the user's `~/.config/` directory).  Unfortunately this means that
+there can only be one location which KiCad will look for 3D models regardless of
+which project you're working in (this is in contrast to how symbols and
+footprints have both a global and local per-project list of libraries).
+
+To deal with this, be sure to set your KiCad KISYS3DMOD variable to point to the
+`./kicad-packages3D/` directory after you clone this top level repo and use myrepos
+to checkout the sub-repos.
