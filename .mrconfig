@@ -21,57 +21,57 @@ git_gitcheckout = git checkout "$@"
 
 [kicad-symbols]
 checkout =
-	git clone 'https://github.com/kibrarian-group/kicad-symbols.git' 'kicad-symbols' -o 'github-kibrarian'
+	git clone 'https://github.com/bradfa/kicad-symbols.git' 'kicad-symbols' -o 'github-bradfa'
 	cd kicad-symbols
-	git remote set-url --push github-kibrarian git@github.com:kibrarian-group/kicad-symbols.git
+	git remote set-url --push github-bradfa git@github.com:bradfa/kicad-symbols.git
 	git remote add upstream https://github.com/KiCad/kicad-symbols.git
 
 [kicad-footprints]
 checkout =
-	git clone 'https://github.com/kibrarian-group/kicad-footprints.git' 'kicad-footprints' -o 'github-kibrarian'
+	git clone 'https://github.com/bradfa/kicad-footprints.git' 'kicad-footprints' -o 'github-bradfa'
 	cd kicad-footprints
-	git remote set-url --push github-kibrarian git@github.com:kibrarian-group/kicad-footprints.git
+	git remote set-url --push github-bradfa git@github.com:bradfa/kicad-footprints.git
 	git remote add upstream https://github.com/KiCad/kicad-footprints.git
 
 [kicad-packages3D]
 checkout =
-	git clone 'https://github.com/kibrarian-group/kicad-packages3D.git' 'kicad-packages3D' -o 'github-kibrarian'
+	git clone 'https://github.com/bradfa/kicad-packages3D.git' 'kicad-packages3D' -o 'github-bradfa'
 	cd kicad-packages3D
-	git remote set-url --push github-kibrarian git@github.com:kibrarian-group/kicad-packages3D.git
+	git remote set-url --push github-bradfa git@github.com:bradfa/kicad-packages3D.git
 	git remote add upstream https://github.com/KiCad/kicad-packages3D.git
 
 [kicad-packages3D-source]
 checkout =
-	git clone 'https://github.com/kibrarian-group/kicad-packages3D-source.git' 'kicad-packages3D-source' -o 'github-kibrarian'
+	git clone 'https://github.com/bradfa/kicad-packages3D-source.git' 'kicad-packages3D-source' -o 'github-bradfa'
 	cd kicad-packages3D-source
-	git remote set-url --push github-kibrarian git@github.com:kibrarian-group/kicad-packages3D-source.git
+	git remote set-url --push github-bradfa git@github.com:bradfa/kicad-packages3D-source.git
 	git remote add upstream https://github.com/KiCad/kicad-packages3D-source.git
 
 [kicad-doc]
 checkout =
-	git clone 'https://github.com/kibrarian-group/kicad-doc.git' 'kicad-doc' -o 'github-kibrarian'
+	git clone 'https://github.com/bradfa/kicad-doc.git' 'kicad-doc' -o 'github-bradfa'
 	cd kicad-doc
-	git remote set-url --push github-kibrarian git@github.com:kibrarian-group/kicad-doc.git
+	git remote set-url --push github-bradfa git@github.com:bradfa/kicad-doc.git
 	git remote add upstream https://github.com/KiCad/kicad-doc.git
 
 [kicad-templates]
 checkout =
-	git clone 'https://github.com/kibrarian-group/kicad-templates.git' 'kicad-templates' -o 'github-kibrarian'
+	git clone 'https://github.com/bradfa/kicad-templates.git' 'kicad-templates' -o 'github-bradfa'
 	cd kicad-templates
-	git remote set-url --push github-kibrarian git@github.com:kibrarian-group/kicad-templates.git
+	git remote set-url --push github-bradfa git@github.com:bradfa/kicad-templates.git
 	git remote add upstream https://github.com/KiCad/kicad-templates.git
 
 [kicad-library-utils]
 checkout =
-	git clone 'https://github.com/kibrarian-group/kicad-library-utils.git' 'kicad-library-utils' -o 'github-kibrarian'
+	git clone 'https://github.com/bradfa/kicad-library-utils.git' 'kicad-library-utils' -o 'github-bradfa'
 	cd kicad-library-utils
-	git remote set-url --push github-kibrarian git@github.com:kibrarian-group/kicad-library-utils.git
+	git remote set-url --push github-bradfa git@github.com:bradfa/kicad-library-utils.git
 	git remote add upstream https://github.com/KiCad/kicad-library-utils.git
 
 [kicad-footprint-generator]
 checkout =
-	git clone 'https://github.com/kibrarian-group/kicad-footprint-generator.git' 'kicad-footprint-generator' -o 'github-kibrarian'
+	git clone 'https://github.com/bradfa/kicad-footprint-generator.git' 'kicad-footprint-generator' -o 'github-bradfa'
 	cd kicad-footprint-generator
-	git remote set-url --push github-kibrarian git@github.com:kibrarian-group/kicad-footprint-generator.git
+	git remote set-url --push github-bradfa git@github.com:bradfa/kicad-footprint-generator.git
 	git remote add upstream https://github.com/pointhi/kicad-footprint-generator.git
 
