@@ -7,6 +7,9 @@ git_reset = git reset "$@"
 git_merge = git merge "$@"
 git_remote = git remote "$@"
 
+# Allow for `git config` operations on git repos
+git_gitconfig = git config "$@"
+
 # For 'mr status', don't assume the short format for 'git status' is desired
 git_status = git status "$@"
 
