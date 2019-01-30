@@ -32,3 +32,9 @@ footprints have both a global and local per-project list of libraries).
 To deal with this, be sure to set your KiCad KISYS3DMOD variable to point to the
 `./kicad-packages3D/` directory after you clone this top level repo and use myrepos
 to checkout the sub-repos.
+
+## Licensing
+
+You're welcome to copy/use these files which orchestrate KiCad libraries for any
+purpose so long as you comply with the Apache License v2.0.  For the full
+license text please see the `LICENSE` file.
